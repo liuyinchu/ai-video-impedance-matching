@@ -68,3 +68,9 @@ ssh -N -L 18786:127.0.0.1:18786 yangshuyun@10.10.10.1
 
 然后打开 http://127.0.0.1:18786/index.html 。播放器使用完整预加载、明确的播放按钮与错误提示。
 追加 ?diagnostic=1 可显示仅用于复核的播放事件、缓冲范围和当前位置。
+
+## 完整工程备份与恢复
+
+[下载完整工程与成片](https://github.com/liuyinchu/ai-video-impedance-matching/releases/tag/backup-2026-10-26) · [备份与恢复说明](backup/2026-10-26/README.md) · [自动校验记录](https://github.com/liuyinchu/ai-video-impedance-matching/blob/backup-verified-2026-10-26/verification.json)
+
+完整快照包含原工程的 313 个文件（含 .git、build、配音、视频及被 Git 忽略的输出），采用分块 Git 备份并由 GitHub Actions 重组为 Release 附件。只有在解压逐文件检查与 Release 下载回验均通过后，才生成校验记录。

@@ -1,0 +1,89 @@
+name: Verify and release complete project backup
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'backup/**'
+      - '.github/workflows/full-backup.yml'
+      - 'scripts/verify-snapshot.mjs'
+      - 'scripts/write-backup-report.mjs'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: full-project-backup-2026-10-26
+  cancel-in-progress: false
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BACKUP_TAG: backup-2026-10-26
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+      - name: Reassemble and verify complete snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/release" "$RUNNER_TEMP/restored"
+          cd backup/2026-10-26
+          sha256sum -c parts.sha256
+          cat chunks/part-* > "$RUNNER_TEMP/release/ai-video-impedance-matching-full-2026-10-26.tar.gz"
+          cd "$RUNNER_TEMP/release"
+          sha256sum -c "$GITHUB_WORKSPACE/backup/2026-10-26/snapshot.sha256"
+          tar -xzf ai-video-impedance-matching-full-2026-10-26.tar.gz -C "$RUNNER_TEMP/restored"
+          node "$GITHUB_WORKSPACE/scripts/verify-snapshot.mjs" "$GITHUB_WORKSPACE/backup/2026-10-26/file-manifest.json" "$RUNNER_TEMP/restored"
+          git -C "$RUNNER_TEMP/restored" fsck --full
+          test "$(git -C "$RUNNER_TEMP/restored" rev-parse HEAD)" = "e279f63d3e81e8df9bae2551d2f910a3dda6e8bc"
+      - name: Prepare downloadable files and checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp backup/2026-10-26/file-manifest.json "$RUNNER_TEMP/release/"
+          for name in impedance-matching.mp4 impedance-matching.zh-CN.srt cover.png cover.jpg video-description.txt chapters.txt; do
+            cp "$RUNNER_TEMP/restored/output/$name" "$RUNNER_TEMP/release/"
+          done
+          printf '%s\n' e279f63d3e81e8df9bae2551d2f910a3dda6e8bc > "$RUNNER_TEMP/release/SOURCE-HEAD.txt"
+          cd "$RUNNER_TEMP/release"
+          sha256sum *.tar.gz file-manifest.json impedance-matching.mp4 impedance-matching.zh-CN.srt cover.png cover.jpg video-description.txt chapters.txt SOURCE-HEAD.txt > SHA256SUMS
+      - name: Publish release
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$BACKUP_TAG" >/dev/null 2>&1; then
+            gh release upload "$BACKUP_TAG" "$RUNNER_TEMP/release/"* --clobber
+          else
+            gh release create "$BACKUP_TAG" "$RUNNER_TEMP/release/"* --target "$GITHUB_SHA" --title "完整工程备份 · 2026-10-26" --notes-file backup/2026-10-26/RELEASE-NOTES.md
+          fi
+      - name: Download release again and verify its actual bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/downloaded"
+          gh release download "$BACKUP_TAG" --dir "$RUNNER_TEMP/downloaded"
+          cmp "$RUNNER_TEMP/release/SHA256SUMS" "$RUNNER_TEMP/downloaded/SHA256SUMS"
+          cd "$RUNNER_TEMP/downloaded"
+          sha256sum -c SHA256SUMS
+      - name: Publish verification receipt
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$BACKUP_TAG" > "$RUNNER_TEMP/release.json"
+          node scripts/write-backup-report.mjs "$RUNNER_TEMP/release.json" "$RUNNER_TEMP/release" backup/2026-10-26/file-manifest.json > "$RUNNER_TEMP/verification.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          blob=$(git hash-object -w "$RUNNER_TEMP/verification.json")
+          tree=$(printf '100644 blob %s\tverification.json\n' "$blob" | git mktree)
+          ref=refs/heads/backup-verified-2026-10-26
+          parent=$(git ls-remote origin "$ref" | cut -f1)
+          if [ -n "$parent" ]; then
+            git fetch origin "$ref"
+            commit=$(printf 'Verify complete backup and Release download\n' | git commit-tree "$tree" -p "$parent")
+          else
+            commit=$(printf 'Verify complete backup and Release download\n' | git commit-tree "$tree")
+          fi
+          git push origin "$commit:$ref"
+          cat "$RUNNER_TEMP/verification.json" >> "$GITHUB_STEP_SUMMARY"

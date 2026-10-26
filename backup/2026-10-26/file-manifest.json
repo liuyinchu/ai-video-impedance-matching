@@ -1,0 +1,2646 @@
+{
+  "schema": 1,
+  "repository": "liuyinchu/ai-video-impedance-matching",
+  "snapshotDate": "2026-10-26",
+  "sourceHead": "e279f63d3e81e8df9bae2551d2f910a3dda6e8bc",
+  "fileCount": 313,
+  "totalBytes": 74924507,
+  "entries": [
+    {
+      "path": ".git",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/COMMIT_EDITMSG",
+      "mode": 420,
+      "type": "file",
+      "size": 57,
+      "sha256": "c17899e45b7a96770ae5a32dff7f757a50ef921b23f530fb80ad96fe8c6a1129"
+    },
+    {
+      "path": ".git/HEAD",
+      "mode": 420,
+      "type": "file",
+      "size": 21,
+      "sha256": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80"
+    },
+    {
+      "path": ".git/config",
+      "mode": 420,
+      "type": "file",
+      "size": 137,
+      "sha256": "cae33efdb02cf774435c1ff9cb16bcc1014606908530c6e1dc727615fe3e8cda"
+    },
+    {
+      "path": ".git/description",
+      "mode": 420,
+      "type": "file",
+      "size": 73,
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+    },
+    {
+      "path": ".git/hooks",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/hooks/applypatch-msg.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 478,
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+    },
+    {
+      "path": ".git/hooks/commit-msg.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 896,
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+    },
+    {
+      "path": ".git/hooks/fsmonitor-watchman.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 4726,
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+    },
+    {
+      "path": ".git/hooks/post-update.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 189,
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+    },
+    {
+      "path": ".git/hooks/pre-applypatch.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 424,
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+    },
+    {
+      "path": ".git/hooks/pre-commit.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 1643,
+      "sha256": "f9af7d95eb1231ecf2eba9770fedfa8d4797a12b02d7240e98d568201251244a"
+    },
+    {
+      "path": ".git/hooks/pre-merge-commit.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 416,
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+    },
+    {
+      "path": ".git/hooks/pre-push.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 1374,
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+    },
+    {
+      "path": ".git/hooks/pre-rebase.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 4898,
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+    },
+    {
+      "path": ".git/hooks/pre-receive.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 544,
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+    },
+    {
+      "path": ".git/hooks/prepare-commit-msg.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 1492,
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+    },
+    {
+      "path": ".git/hooks/push-to-checkout.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 2783,
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+    },
+    {
+      "path": ".git/hooks/update.sample",
+      "mode": 493,
+      "type": "file",
+      "size": 3650,
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+    },
+    {
+      "path": ".git/index",
+      "mode": 420,
+      "type": "file",
+      "size": 2914,
+      "sha256": "d811945dcf8edb9397bef384530cb724743a932eebcbc62bdea43833f926a5c8"
+    },
+    {
+      "path": ".git/info",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/info/exclude",
+      "mode": 420,
+      "type": "file",
+      "size": 240,
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+    },
+    {
+      "path": ".git/logs",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/logs/HEAD",
+      "mode": 420,
+      "type": "file",
+      "size": 823,
+      "sha256": "4a4bfaa41fc9a481fce049f99d4956fbc95926a9fac6886e36dc33c5637bc318"
+    },
+    {
+      "path": ".git/logs/refs",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/logs/refs/heads",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/logs/refs/heads/main",
+      "mode": 420,
+      "type": "file",
+      "size": 823,
+      "sha256": "4a4bfaa41fc9a481fce049f99d4956fbc95926a9fac6886e36dc33c5637bc318"
+    },
+    {
+      "path": ".git/objects",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/05",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/05/2cdbb645f60796e95b18ebfc3a3367923cf606",
+      "mode": 292,
+      "type": "file",
+      "size": 247,
+      "sha256": "1d01548124fd2006ada00de46f3767189266e1eba039da50672f71d76e0b125d"
+    },
+    {
+      "path": ".git/objects/05/ec47ddf87ac4d41bd0677234a695d9e2ddd3fe",
+      "mode": 292,
+      "type": "file",
+      "size": 326723,
+      "sha256": "edada7f4d77d226f6e19362f8141076f31f60d6d3a983cefcf58a06434ccdb70"
+    },
+    {
+      "path": ".git/objects/09",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/09/a01fedfc123c63379ea2008fad9edd2ee8da35",
+      "mode": 292,
+      "type": "file",
+      "size": 602,
+      "sha256": "bc30f99d0c725fadae25de92bb4b55a719af7dfa7ef9b973d0e6e26c540f247a"
+    },
+    {
+      "path": ".git/objects/0f",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/0f/d9a2ab553c78234f9a2e46f0f78b58c9a991e8",
+      "mode": 292,
+      "type": "file",
+      "size": 438,
+      "sha256": "0d454b0415f0acda111b02da6b283458b80652843addc69ea5f84f22b6c2bdb0"
+    },
+    {
+      "path": ".git/objects/10",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/10/b36da29aa27056d1608f94efcdceada452cf24",
+      "mode": 292,
+      "type": "file",
+      "size": 62,
+      "sha256": "7854ae294273bcaeddf54723af7f46a3401591a3929d066036d1ee37a64f2c8e"
+    },
+    {
+      "path": ".git/objects/11",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/11/521add1a7bc537d801c533c2fe6b5a233d100e",
+      "mode": 292,
+      "type": "file",
+      "size": 224,
+      "sha256": "a27a2a83b3c8707edbcb3ac321f7bf781270ebdbff4f7701db0c02a4b1b3cb4b"
+    },
+    {
+      "path": ".git/objects/13",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/13/0bda82069ddeea05f24a9b9367ffb0a964aefb",
+      "mode": 292,
+      "type": "file",
+      "size": 457,
+      "sha256": "3b5d5431a5096a2a7e092196eb695fb0739129863fa425e3aaeae348aafdc98c"
+    },
+    {
+      "path": ".git/objects/15",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/15/b462322a51e1acef361856771c095129765b87",
+      "mode": 292,
+      "type": "file",
+      "size": 274,
+      "sha256": "68655edc6f29cfb730cb558d7651ec3ee7d1b8c79ca1b6c9d7c00543f20fd7b4"
+    },
+    {
+      "path": ".git/objects/17",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/17/fa30b87c8cfdbc4efeafadf3f35de105d05740",
+      "mode": 292,
+      "type": "file",
+      "size": 490,
+      "sha256": "6cd8cb446317d720611a91d997e1373a83cda8549c54840ba2e0cd7574e077a5"
+    },
+    {
+      "path": ".git/objects/1b",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/1b/9ec8790695b8032045c2d074e1499e76baed62",
+      "mode": 292,
+      "type": "file",
+      "size": 119,
+      "sha256": "252d60b32c9e1502e44587769b4b31bf41b2d8d1e5c3b49fce1e6975cc33672c"
+    },
+    {
+      "path": ".git/objects/1c",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/1c/5fa7b4c1c34b93aa3ee98b32ceaf60a89cd702",
+      "mode": 292,
+      "type": "file",
+      "size": 89,
+      "sha256": "0302ced33c776f1dbdfec0065b98e302618d6fe9f80165dd862313fb3794ad60"
+    },
+    {
+      "path": ".git/objects/1d",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/1d/d6cd15d71efcbc9acd813f015c884f8b246901",
+      "mode": 292,
+      "type": "file",
+      "size": 5484,
+      "sha256": "4c08f0814b7669b70cbf916694d6d660e363afc8fb1368527cad31a0d4e24178"
+    },
+    {
+      "path": ".git/objects/1d/fa16fb9b4036fe7d11cbeeb93f4640c901d89a",
+      "mode": 292,
+      "type": "file",
+      "size": 8802,
+      "sha256": "66131a00bd6126a85ad0d69cda5f8f88eb3d698be7a29ee29bfdc40f9ccc0bd6"
+    },
+    {
+      "path": ".git/objects/24",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/24/562ef9d17be9b7a17be3da3f3d6ed7e7e08ece",
+      "mode": 292,
+      "type": "file",
+      "size": 355,
+      "sha256": "15664f139c5bb80e6e51c01fa52b7d2bcc85b4cca279815639690580ef7724ef"
+    },
+    {
+      "path": ".git/objects/26",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/26/d63b22154e295b9599310735c8d3d0d5ca2cbc",
+      "mode": 292,
+      "type": "file",
+      "size": 735473,
+      "sha256": "9cb79b9c30fa634cc885566d82b861c81a3ea4f6e7ad8c6f06b03473439fec00"
+    },
+    {
+      "path": ".git/objects/2a",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/2a/398bbb2a31229ef0f2f8c1b0c3cb2a3a9befb0",
+      "mode": 292,
+      "type": "file",
+      "size": 288,
+      "sha256": "d8e324febee4e2b3e87af131d330d0f31e403a1bb5a2df3e90f475bc34c21a34"
+    },
+    {
+      "path": ".git/objects/2f",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/2f/6bd75455097445d106e7adf1e3dfd80385aed1",
+      "mode": 292,
+      "type": "file",
+      "size": 439,
+      "sha256": "2261b530417742d006df04ccdd858d924ee256f5e9eba77d2509996bfbc110c2"
+    },
+    {
+      "path": ".git/objects/36",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/36/4bbc69dc4424753ad0e01e8cd8972772a648a7",
+      "mode": 292,
+      "type": "file",
+      "size": 1506,
+      "sha256": "7d7ad4e0fd4cfddc5356fe288b9e981838fd1b33c57fa7664e1db00333dea054"
+    },
+    {
+      "path": ".git/objects/39",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/39/05aad6b5720cc7af269bb2507049289dde00a4",
+      "mode": 292,
+      "type": "file",
+      "size": 9770,
+      "sha256": "83615f6be146e3a2c27d89f7d8fea11cfac54424226f64fc3dfefefb02fe8feb"
+    },
+    {
+      "path": ".git/objects/39/ac647a62bd344c0c900a11ad422bda86e4888c",
+      "mode": 292,
+      "type": "file",
+      "size": 628,
+      "sha256": "9d0da3910f53a843a0949c072f88864847d2a3c0841d77b6368ae4d80de2e878"
+    },
+    {
+      "path": ".git/objects/3e",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/3e/16877e33839fc42f376f45647cb3e37146597e",
+      "mode": 292,
+      "type": "file",
+      "size": 351,
+      "sha256": "ffbac720d89b4d852cdf5cbf1e7eafba19b54610a99e09cafe80c49a173952d0"
+    },
+    {
+      "path": ".git/objects/3e/9d8494387e37329580e5b652228032cea7145c",
+      "mode": 292,
+      "type": "file",
+      "size": 211,
+      "sha256": "8870af79a7eea0188a8838f4f019442f4fdb1640cb80d29b59fa86f5b7ac5087"
+    },
+    {
+      "path": ".git/objects/40",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/40/cade5d587a2d9c4fe93f5e5560adff81865a66",
+      "mode": 292,
+      "type": "file",
+      "size": 89,
+      "sha256": "da2b50fb294d83b67b467f0bc4d0c4643dcc0cc6cce801e157f4e8a1f7d21f61"
+    },
+    {
+      "path": ".git/objects/44",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/44/f4d885c5f55422869425cde92a81ccd7732bc1",
+      "mode": 292,
+      "type": "file",
+      "size": 1263,
+      "sha256": "eeedfbb9448ebfded2ae22416ae5e7f3eeaca2e4bbccab8d487fd629bff5343e"
+    },
+    {
+      "path": ".git/objects/4c",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/4c/0015349db5d662820f7a1e6b8525633f11b4c5",
+      "mode": 292,
+      "type": "file",
+      "size": 289,
+      "sha256": "f7da356e9ff170664dfea37f151169fa15021df7c8d9682f64d0f224aae5f09e"
+    },
+    {
+      "path": ".git/objects/52",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/52/8272b9fb8ad826f0dd1bb0c53a03c23e80cced",
+      "mode": 292,
+      "type": "file",
+      "size": 151,
+      "sha256": "4c3e18ecff8b60cc87e22f17c0afe48093486bd6519ce1bb15574fc07f906266"
+    },
+    {
+      "path": ".git/objects/56",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/56/80d10d8340f4ffd71390d8f5a970646f18d0a3",
+      "mode": 292,
+      "type": "file",
+      "size": 2458,
+      "sha256": "c6717275d8f4ffceeb585fa99d483a093e3f2541999ac88a721f063cc0edc01e"
+    },
+    {
+      "path": ".git/objects/5a",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/5a/8868fd5fb6f666ef135af6fe27b23c589fcc75",
+      "mode": 292,
+      "type": "file",
+      "size": 544,
+      "sha256": "78563bdee732bab1da840e8fe6263c8dc45677d1e45de0c3022bc90189f9622c"
+    },
+    {
+      "path": ".git/objects/5d",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/5d/9bc349afcc5a5e096e5dde66eca0ee74f288b3",
+      "mode": 292,
+      "type": "file",
+      "size": 3643,
+      "sha256": "d596f8d2320eda3f613bf6081b32a4e8e8cbafe61dd99b5ddf9570c257cbe3b5"
+    },
+    {
+      "path": ".git/objects/66",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/66/ad143c017d5fd829770761d1e2024bf39d9fa9",
+      "mode": 292,
+      "type": "file",
+      "size": 94796,
+      "sha256": "71541aac167612af687aa80ceec71e522fb4e83ff69c5da5aa9580248741653d"
+    },
+    {
+      "path": ".git/objects/68",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/68/b5092f541b081775c5b26fc5c6e750fe88e306",
+      "mode": 292,
+      "type": "file",
+      "size": 725719,
+      "sha256": "c8aae50c1687fd80ac22be75c7201ccba080f869206af7e35d1396f79d529386"
+    },
+    {
+      "path": ".git/objects/6d",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/6d/6d39628f8b3e9ba56a3d10bbe59213a56f4cf8",
+      "mode": 292,
+      "type": "file",
+      "size": 2400,
+      "sha256": "7ab95dd3af923082f57b84c40a98d74e67a0dcc74e44645ac769202f5358b6bf"
+    },
+    {
+      "path": ".git/objects/73",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/73/f9f70e20c30c9123c24640d24e493e0892e13c",
+      "mode": 292,
+      "type": "file",
+      "size": 388,
+      "sha256": "ee61cf55fa68e841f96e477a5eacdf27f040851704c1266ae92e2937ecabf662"
+    },
+    {
+      "path": ".git/objects/7a",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/7a/4cf7472fd76ebcbc311a6a10d02a9f987f73b0",
+      "mode": 292,
+      "type": "file",
+      "size": 225,
+      "sha256": "f8c803381b310db1eabe0147e453b86d6daa6508b0c9f146689121d2ef2a929a"
+    },
+    {
+      "path": ".git/objects/83",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/83/893b8bb16253fdd10c5b78b6b37484ed9ed756",
+      "mode": 292,
+      "type": "file",
+      "size": 243,
+      "sha256": "57a20fa7a762e12f84c8202121a49364eea20450b6271c12ee0a91bc1d425d67"
+    },
+    {
+      "path": ".git/objects/83/d03e1034843c3d8b5cd5cebe974cd2995f9a2d",
+      "mode": 292,
+      "type": "file",
+      "size": 160,
+      "sha256": "784a9d96e87ebb345218973fed5d0155804405007e5c61119eb11053c44f9eff"
+    },
+    {
+      "path": ".git/objects/83/e9a37b60325979a54a8217e8acbb8b2106cdd0",
+      "mode": 292,
+      "type": "file",
+      "size": 167,
+      "sha256": "5ffc9118b9d8598662c189cdc05795390e82d5d173eb6017c779319e138a18b0"
+    },
+    {
+      "path": ".git/objects/85",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/85/591d7b98f98e996727359bdb3d2be94273c436",
+      "mode": 292,
+      "type": "file",
+      "size": 234,
+      "sha256": "7ca401917d249ee688ce9a7d6b1ee37c2f0c94bcdc86d6ca7390dc01a68a44f7"
+    },
+    {
+      "path": ".git/objects/86",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/86/9d13ecce5655c9ea9ede2b35e03397b8e34544",
+      "mode": 292,
+      "type": "file",
+      "size": 770,
+      "sha256": "28e231bf3c3cba10c9141ef1eb5fab379017f05d63b1acb93bfdabd21e392ac3"
+    },
+    {
+      "path": ".git/objects/87",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/87/b85774edac2bd055d7f116c560b5d0859c8fed",
+      "mode": 292,
+      "type": "file",
+      "size": 2471,
+      "sha256": "196c61681e3c43d868b7e53010f93e6e72b4e87338ec684d97ca5be055db4351"
+    },
+    {
+      "path": ".git/objects/87/be2f04436e56f58bc6a1bc36867ad4653f605b",
+      "mode": 292,
+      "type": "file",
+      "size": 2595,
+      "sha256": "737faf7905a5d84eb43d5fb4f5338fd440dbdc8a57bd5bea1a6e6333cbe10961"
+    },
+    {
+      "path": ".git/objects/87/bec918b37ed5231548cc107da0db8f69b52ff1",
+      "mode": 292,
+      "type": "file",
+      "size": 512,
+      "sha256": "9fd2a0b95242a0cf26c739ebf10a738b4b944fbc88f890146076f700152bb2f7"
+    },
+    {
+      "path": ".git/objects/88",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/88/efafe5d0ca980f0dd1ad0571c2f0b2fc7ac3f2",
+      "mode": 292,
+      "type": "file",
+      "size": 1610,
+      "sha256": "ed693160bbb2d32c3d5026a92389bdd526160ceb8fdf798eafe9c538ed72bb1f"
+    },
+    {
+      "path": ".git/objects/89",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/89/833e786b5b6194b6147ba8682afd6481daf490",
+      "mode": 292,
+      "type": "file",
+      "size": 676,
+      "sha256": "474fef8fb4bfcc9d84be47a8b0eced7dc4952b27981bb80c50b583b4902c6532"
+    },
+    {
+      "path": ".git/objects/8f",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/8f/328be4a320ac0a2b47bc5cb062fd01e456be8c",
+      "mode": 292,
+      "type": "file",
+      "size": 1551,
+      "sha256": "259543aae75302e282e52d78a7fd9fb769c0da287f8ec866a91f931435048cbb"
+    },
+    {
+      "path": ".git/objects/92",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/92/d49e13906ffd1639b91836fd5562bffa5d243f",
+      "mode": 292,
+      "type": "file",
+      "size": 200,
+      "sha256": "f562804f15e344d3e8d6efdb170989e77bdb3148319938267d9dca9e6aa9a8ac"
+    },
+    {
+      "path": ".git/objects/9a",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/9a/b33501979ef28880b867b03f00fe3a464b88bc",
+      "mode": 292,
+      "type": "file",
+      "size": 351,
+      "sha256": "778934e0f20a744bb00a27e632a9a8a2a4b286130b731e68ae35a34d2e804cee"
+    },
+    {
+      "path": ".git/objects/9b",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/9b/efcd8cc0b57c0e31b3b9b91e2ae04230747603",
+      "mode": 292,
+      "type": "file",
+      "size": 2059,
+      "sha256": "08aa4c95f777b88b6bebe86af2bd47a438fb8246142015b7239cd0a41bef1166"
+    },
+    {
+      "path": ".git/objects/9e",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/9e/bbe6c88e099e9227fe941abb1dbee137d62288",
+      "mode": 292,
+      "type": "file",
+      "size": 5482,
+      "sha256": "8682d8fca861fe6565b780622477732090b24564aff4289b66faad64e7de4810"
+    },
+    {
+      "path": ".git/objects/9f",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/9f/66d99d182755ccfc9f581e52695105d7b15995",
+      "mode": 292,
+      "type": "file",
+      "size": 198,
+      "sha256": "38d29660d1daa3a3e857409b496f728a13d7f1bd69cf9d89d51ecd5702d328ae"
+    },
+    {
+      "path": ".git/objects/a6",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/a6/a6707fe0d181865f6fab5e0fb96de25f758f32",
+      "mode": 292,
+      "type": "file",
+      "size": 153,
+      "sha256": "1f40c46227fb5efe96d830b8f78ca9daba4f6f255b9386f747f0fe715c252147"
+    },
+    {
+      "path": ".git/objects/ac",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/ac/2b35727af1a6c348325343b3892741895af8d9",
+      "mode": 292,
+      "type": "file",
+      "size": 457,
+      "sha256": "8a79dfaff560ac0e693990ebe23b5d2fcc7fbf5126a1ec7d2475a59ff7255b2f"
+    },
+    {
+      "path": ".git/objects/b4",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/b4/59caf2b4ee818ee12a7d8e16131fdcbdc4157d",
+      "mode": 292,
+      "type": "file",
+      "size": 6490,
+      "sha256": "4e984682ac1c1c95186aff4e76ca7b9af98e0a0f1dd4f5ee40e63dbd5d8d4dce"
+    },
+    {
+      "path": ".git/objects/b6",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/b6/4dea958cd2a1ad73c8bd4015346b16f67af53c",
+      "mode": 292,
+      "type": "file",
+      "size": 6490,
+      "sha256": "511f2521c06fd2f96cd053d35ee507bc44d3f26666c58c3ef6755ce6f621b381"
+    },
+    {
+      "path": ".git/objects/b9",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/b9/0046421730e92fd4a332c89d6c5ea3da6f9b9a",
+      "mode": 292,
+      "type": "file",
+      "size": 2468,
+      "sha256": "203f9d3c00a2d58519f5993904cac5ce2b469a7b2bafb7b10b03b7d0759f05ba"
+    },
+    {
+      "path": ".git/objects/bd",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/bd/9a84376d7bffaaad422678884068713743c62a",
+      "mode": 292,
+      "type": "file",
+      "size": 405,
+      "sha256": "2aade502f6fa5db3808e4e8d280bd8367ca16a444cc7767554750d5636d270f7"
+    },
+    {
+      "path": ".git/objects/bd/e671008b2cb52e2071c37fe7e2dd631b6928af",
+      "mode": 292,
+      "type": "file",
+      "size": 119,
+      "sha256": "33c583276c606923af1d9f5eda9de049c82321abdefc3ce32e1bcd0c75045f1e"
+    },
+    {
+      "path": ".git/objects/bf",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/bf/b0742deff909aea19864a426350768d7fefe6b",
+      "mode": 292,
+      "type": "file",
+      "size": 2579,
+      "sha256": "90822adfb76c8e5b3b80438bc6032d89620908b7f8e9ebdf4d4d8d495a9f33af"
+    },
+    {
+      "path": ".git/objects/c1",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/c1/3be70f810f651915fb254d99ec89fd05afef7c",
+      "mode": 292,
+      "type": "file",
+      "size": 666,
+      "sha256": "cc58ec6c270ebb6c8c7da4291229bb500d91627d189d6b88f19e3b38a02490e1"
+    },
+    {
+      "path": ".git/objects/c1/5b4b9dcfe60ea7c5cddf4884acde26a47af628",
+      "mode": 292,
+      "type": "file",
+      "size": 1636,
+      "sha256": "23957741ccc534560cc2bbace482ccba5c6f26e66bc65425164269af9d735f5e"
+    },
+    {
+      "path": ".git/objects/c9",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/c9/3d84c4ed48cb1c3e70f8c422ca0cd671f2b169",
+      "mode": 292,
+      "type": "file",
+      "size": 209,
+      "sha256": "585e3cea453ac7223415ab428dd39ee2350f21abbb40878022c10f2fa658cc24"
+    },
+    {
+      "path": ".git/objects/c9/fb27b8e8a41bd484096945b40ed6b774ef364b",
+      "mode": 292,
+      "type": "file",
+      "size": 97,
+      "sha256": "85a7f99ff9789af086156dcfe311642dddb1826451077bf83ec34ad1b4dd31a1"
+    },
+    {
+      "path": ".git/objects/ce",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/ce/10c0010221915d85ce116ab8eb1164a126567c",
+      "mode": 292,
+      "type": "file",
+      "size": 288,
+      "sha256": "7f5f1eb9f8e118a80941a8ee0b65a4a6ff8759a4c2e4f23008aeb476d46eef55"
+    },
+    {
+      "path": ".git/objects/d3",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/d3/1a7a5b6429109d04bb56d579d69be330422d14",
+      "mode": 292,
+      "type": "file",
+      "size": 648,
+      "sha256": "eec53c2ff459c5b4f244743b357eb9ea97a640b1fab331535d4a531eb88fffc9"
+    },
+    {
+      "path": ".git/objects/d3/68286e5509f1e6b2a92117e374cf088da8975f",
+      "mode": 292,
+      "type": "file",
+      "size": 276,
+      "sha256": "84d5f27a9ee6afec0229a50d05f5a5c45e906ba790a7fe14266f5e08f291506c"
+    },
+    {
+      "path": ".git/objects/d4",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/d4/06d011b86817f20a8b6e1f64a6d753126f862e",
+      "mode": 292,
+      "type": "file",
+      "size": 89,
+      "sha256": "2a628c6212924cd6c95612b224ed38a857f0b9fe6bc2d63c2afa16f152be5305"
+    },
+    {
+      "path": ".git/objects/d9",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/d9/a2288960fe1ae436339d0dee5c892c0145c70f",
+      "mode": 292,
+      "type": "file",
+      "size": 1611,
+      "sha256": "91dcf5506c484d71b6b2bb1752b10527c66a564be7e51f949e5ea1fa724d75bc"
+    },
+    {
+      "path": ".git/objects/df",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/df/72bf183ff20c407d7ccf61f423c6681a714c0e",
+      "mode": 292,
+      "type": "file",
+      "size": 1399183,
+      "sha256": "f97fd5615b61031efa4f7790aba4dfb5031f604a2f7aacedde20fd2abbc274ff"
+    },
+    {
+      "path": ".git/objects/df/dc72b20aa6e0754ef35eb34dce7f976f9f59df",
+      "mode": 292,
+      "type": "file",
+      "size": 648,
+      "sha256": "f86c26191331bb40021990a37c70e714c2a07925f307e6de5edbd8f77411f864"
+    },
+    {
+      "path": ".git/objects/e1",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/e1/8c3d20798f8087dfed162a5ab275a9de0d4684",
+      "mode": 292,
+      "type": "file",
+      "size": 94786,
+      "sha256": "3dd22158d05a5dd274375dfd0d730c9ee29783c7d5236e1f7f2e7368287d7643"
+    },
+    {
+      "path": ".git/objects/e2",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/e2/79f63d3e81e8df9bae2551d2f910a3dda6e8bc",
+      "mode": 292,
+      "type": "file",
+      "size": 196,
+      "sha256": "4c941465c7a6238321dc3fab721542d2946c36bc1ba4c0cefb1c0c494a720c83"
+    },
+    {
+      "path": ".git/objects/e5",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/e5/29e761bb0986c55d3bea6d5b463783e27944cc",
+      "mode": 292,
+      "type": "file",
+      "size": 9073,
+      "sha256": "8a6141b0eb048ff27ed441616b46d7f9c4948da11b2baf3c421138537613468b"
+    },
+    {
+      "path": ".git/objects/eb",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/eb/60745964d94a514547ce8af036443bc8f63307",
+      "mode": 292,
+      "type": "file",
+      "size": 1263,
+      "sha256": "96ce3c0eed44767533069f295bedf23336868eaa1eeac37bed7b5315f61b95bf"
+    },
+    {
+      "path": ".git/objects/ec",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/ec/ba8cad540063e9834d2c94f994c3d1a10cc036",
+      "mode": 292,
+      "type": "file",
+      "size": 2815,
+      "sha256": "723a7c6608dba12443bae428690eb26e2300ea22e269925004cb9bfb77de71d2"
+    },
+    {
+      "path": ".git/objects/ef",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/ef/701d2adc45566db74026ee944bbce7e8238b87",
+      "mode": 292,
+      "type": "file",
+      "size": 276,
+      "sha256": "7d7eef110f67b0adc8af8f7ff87b6b50ce160fc93d006cb9612fd392d28f8ec7"
+    },
+    {
+      "path": ".git/objects/f1",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/f1/32d81bb5428eb49c2d5b56b984ec11ff79c17f",
+      "mode": 292,
+      "type": "file",
+      "size": 1715,
+      "sha256": "61eeb8bf70b623839c90446a583fb47c576469da3ee042465b30a4dbb3e5aa73"
+    },
+    {
+      "path": ".git/objects/f1/a2fd70f5d1f997782099b6ab82df4f8a857d1a",
+      "mode": 292,
+      "type": "file",
+      "size": 1550,
+      "sha256": "b10e840d7d4a719d73631666538f1328b0ef29d7fb7352357c522861d7090eb6"
+    },
+    {
+      "path": ".git/objects/f2",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/f2/88702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "mode": 292,
+      "type": "file",
+      "size": 14219,
+      "sha256": "a2bd7415253534316b5c345d59bd408af3c6fbf7badb93930510f4c3b510e826"
+    },
+    {
+      "path": ".git/objects/f3",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/f3/5fcb67eb26c8d86c9a8806292f1a3dddecccd0",
+      "mode": 292,
+      "type": "file",
+      "size": 2158,
+      "sha256": "a8870a103a54e05815021e6186be45e1d59a586ce54c1b639481e1ed40c382f1"
+    },
+    {
+      "path": ".git/objects/f4",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/f4/99c1f66b5e94ae73b205546cb967fed4481ebd",
+      "mode": 292,
+      "type": "file",
+      "size": 353,
+      "sha256": "bde7861ebc52b904d498c719fcd86895dbd82d575828dc474da07d512c4d41fc"
+    },
+    {
+      "path": ".git/objects/fa",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/fa/849d5a8b759b76bcb58f998225001816845f27",
+      "mode": 292,
+      "type": "file",
+      "size": 510,
+      "sha256": "fc31661c17df875b2e72a71cc0c9c061c942d068ab8f6cc841dc075c81d14414"
+    },
+    {
+      "path": ".git/objects/info",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/objects/pack",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/refs",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/refs/heads",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".git/refs/heads/main",
+      "mode": 420,
+      "type": "file",
+      "size": 41,
+      "sha256": "064e9a691fefa32bd23778a975705fd0bb98cb72801219989352a3abf0d5015e"
+    },
+    {
+      "path": ".git/refs/tags",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": ".gitignore",
+      "mode": 420,
+      "type": "file",
+      "size": 60,
+      "sha256": "8e96e930ea50df37f6d5d44b24e91131fde75b6d4f931b430d1159c890b229fc"
+    },
+    {
+      "path": "README.md",
+      "mode": 420,
+      "type": "file",
+      "size": 3381,
+      "sha256": "a96d7e44b1906f2c265160004f0f7f08ea6bcfa99860acdcd8b0b7bd991d9d40"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "mode": 420,
+      "type": "file",
+      "size": 975,
+      "sha256": "1c07e8209fc584fe5bc1336197b1c1df24e57ce4cc02ff0e9a989fc20df21df3"
+    },
+    {
+      "path": "build",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "build/audio",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "build/audio/01-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 358402,
+      "sha256": "4d3a2bd4e93ac4918109d11a1209e026e9464dd61b750f2462495945515d2f62"
+    },
+    {
+      "path": "build/audio/01-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 108,
+      "sha256": "1b355fc4339edf009ac3d1ed2da3e89f3ccd75ff239afbd32030a423708c07fb"
+    },
+    {
+      "path": "build/audio/01-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/01-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 462850,
+      "sha256": "c2916ec37c36e6ac667c0383d091b98df04aede1b764f0f0a2f9be026796af61"
+    },
+    {
+      "path": "build/audio/01-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 132,
+      "sha256": "fa4c00159ab6bf542953b0617e48cb30a6a075bc09ce858a425480df1917165c"
+    },
+    {
+      "path": "build/audio/01-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/02-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 348162,
+      "sha256": "37c852cea7162c702d26dc78b49f6df7cd7fced38105fce600599aaca7882831"
+    },
+    {
+      "path": "build/audio/02-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 105,
+      "sha256": "875196c91c4ffdb2f4b3a6274617668c697065a845126f1b4a1976c6343e0724"
+    },
+    {
+      "path": "build/audio/02-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/02-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 402434,
+      "sha256": "148a2f1c2b8e37cc3dc871df636b46bbe75ed36bb321aaf6b4f43c156630a46b"
+    },
+    {
+      "path": "build/audio/02-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 111,
+      "sha256": "cc6400bbf87fd8a6357d75203ece06b51c9b138d8ed1bafe8b5ced306699839f"
+    },
+    {
+      "path": "build/audio/02-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/03-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 405506,
+      "sha256": "f1c867000a94d7c6ca09a46757d0cfb61c1460941961dda2cdfd3aa47fd79432"
+    },
+    {
+      "path": "build/audio/03-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 123,
+      "sha256": "36f0b37a712bd58b876fb882063cfe66bdeb913ea9f4733e14e56b6cf63e9286"
+    },
+    {
+      "path": "build/audio/03-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/03-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 458754,
+      "sha256": "48d4786bfbe5aa7775e3e29daf2e18d66d948d250a6b244f07445b811414efe4"
+    },
+    {
+      "path": "build/audio/03-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 135,
+      "sha256": "36915e8d928d77b7466e7d9ff18774019dc62db3a5a5d97f8b5bf77db00ad54e"
+    },
+    {
+      "path": "build/audio/03-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/04-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 448514,
+      "sha256": "c06589b8d3929db1ee4c8a83e3e3a25205edb14d95aa0a94f24c9ceafb480b03"
+    },
+    {
+      "path": "build/audio/04-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 138,
+      "sha256": "1337f0757de6a45fbbdaff193f05add7908339fcba4b903d4621bede63804941"
+    },
+    {
+      "path": "build/audio/04-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/04-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 474114,
+      "sha256": "1fd1de6f311c8c227c2a0414b88e633b7a08d440f41c325a5b5dd49283cd4b08"
+    },
+    {
+      "path": "build/audio/04-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 147,
+      "sha256": "46b0bb42064ce58acf19bf896511cf4474055820d377184dcee49cb872c50076"
+    },
+    {
+      "path": "build/audio/04-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/05-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 447490,
+      "sha256": "00eb73098bacd08fbeb352b28295ffc97b73d65a3315bd9ddbc95a3a2b86618c"
+    },
+    {
+      "path": "build/audio/05-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 135,
+      "sha256": "577353ff355bd5cc55b6f198d36bbf9fdc3339947ae1de1164eb0e82a9504bae"
+    },
+    {
+      "path": "build/audio/05-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/05-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 518146,
+      "sha256": "c70b1eae0078394820df254084a3c18d5d2fe0b6316f8d0056682915a730cba6"
+    },
+    {
+      "path": "build/audio/05-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 159,
+      "sha256": "834277aedc0abecb2a089fe64a1aaec5e112b188eb8a97f9ccbf2c6f6abce978"
+    },
+    {
+      "path": "build/audio/05-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/06-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 483330,
+      "sha256": "a51db473d71c4d8f79736e25e394ce3e480a0edcc79c653af42a8efb53b7b1ae"
+    },
+    {
+      "path": "build/audio/06-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 144,
+      "sha256": "b6b16e47933990d8fb9aa19bb50babf0b9b8d65255f771340eec7dbcdc40e03b"
+    },
+    {
+      "path": "build/audio/06-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/06-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 458754,
+      "sha256": "f59a3b4859d4ef827d182699d06f7023188ee59fdaf970ef63c099e98f1de053"
+    },
+    {
+      "path": "build/audio/06-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 141,
+      "sha256": "c0c256327ac9461f90a08188cbb08075394d67225d76923a869dfffc6e12cdb0"
+    },
+    {
+      "path": "build/audio/06-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/07-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 446466,
+      "sha256": "fc04dc05a14e3a989402fe5ee34a1becd0f22af89aac5e1c22b93510c4a5c7f5"
+    },
+    {
+      "path": "build/audio/07-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 129,
+      "sha256": "4a6ff1fcfe84e550fe8e0d422c5ce7e34f80c1fdff254323a7eefe4e7985fd4f"
+    },
+    {
+      "path": "build/audio/07-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/07-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 574466,
+      "sha256": "334ab91ed4128af51155455aedf41da1c896816d656f0815201986bce3e1b0f5"
+    },
+    {
+      "path": "build/audio/07-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 177,
+      "sha256": "e9a2ae9d29f97a67f0d8ba22cf0103200c3400af183b95df300b640d3a0fe73b"
+    },
+    {
+      "path": "build/audio/07-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/08-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 467970,
+      "sha256": "4177244d4f7f91718f013a69df1d65b0bf4468d5d800346472fc410712e48295"
+    },
+    {
+      "path": "build/audio/08-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 135,
+      "sha256": "4059f6e5fd14da8d0abba46a5b8164f4296f3dd994120475e57e48e6999f89b7"
+    },
+    {
+      "path": "build/audio/08-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/08-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 625666,
+      "sha256": "7b428f142095cafd668e5921d047fd445b14e3762d16102c5d4cb2fa25e78306"
+    },
+    {
+      "path": "build/audio/08-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 195,
+      "sha256": "c55260606882cd6e20ddf95e9667b3f3b370c97945aa7de2c568b3743f03b6ff"
+    },
+    {
+      "path": "build/audio/08-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/09-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 392194,
+      "sha256": "b46bf69d088e27ed07284c625cee9c3af888ffe0217206c2ef7ef97d69d83ec7"
+    },
+    {
+      "path": "build/audio/09-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 120,
+      "sha256": "49d6d09c1fea12495ab59a0f229a8e40c7bc6c4172b417cb74394591c28d3b1f"
+    },
+    {
+      "path": "build/audio/09-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/09-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 647170,
+      "sha256": "102a7a37705fad40db731a59031fb9ad6455afd21d3824d0fceb319b9cc4d5de"
+    },
+    {
+      "path": "build/audio/09-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 177,
+      "sha256": "444100b57f1fe12e7c4c5f68f2fdb38758dbc11dc830d032cd80662d40223a00"
+    },
+    {
+      "path": "build/audio/09-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/10-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 335874,
+      "sha256": "334a04454659ee43b3b0ddf2e9a5723db49b105bbec40af2ae5354e3aeee21fb"
+    },
+    {
+      "path": "build/audio/10-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 102,
+      "sha256": "66f28b8c2f3408144ecb3ecec440cce56fab8b6821e0050c0e31153845e1cc99"
+    },
+    {
+      "path": "build/audio/10-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/10-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 675842,
+      "sha256": "bc90a7f50e337729342400a684961adf5fccc412ee4a2fff6631cd1cbb8bcea9"
+    },
+    {
+      "path": "build/audio/10-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 201,
+      "sha256": "029da55c38d70acfd20335befeab056a406a69df4a226d45575098aa45edd7ba"
+    },
+    {
+      "path": "build/audio/10-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/11-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 396290,
+      "sha256": "6618798a56e02814544aa170e88c8715cd68eddcdf1f4048ffca3f3250152f87"
+    },
+    {
+      "path": "build/audio/11-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 114,
+      "sha256": "9e7a8c1653322ac34cf554197094c111676d43242525f903a9f01fac801d2f4c"
+    },
+    {
+      "path": "build/audio/11-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/11-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 561154,
+      "sha256": "9cba4f5831c2095f3504d86831e830a5552d37510c3af12356352ff4c6b4b76b"
+    },
+    {
+      "path": "build/audio/11-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 174,
+      "sha256": "6b2ae64f6cf608aa31320d9f67e72db44a4bf88a4c4d9518decc35930fecd17a"
+    },
+    {
+      "path": "build/audio/11-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/12-01.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 417794,
+      "sha256": "d7ac44be9b1d1e5744b96219a09873e7aa8a6685e9ed1d5eb636d970e4459fa0"
+    },
+    {
+      "path": "build/audio/12-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 123,
+      "sha256": "f42081cb3a3ced542633b63a2ae24a110a3091dc154209db4426efa0e0645724"
+    },
+    {
+      "path": "build/audio/12-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/audio/12-02.aiff",
+      "mode": 420,
+      "type": "file",
+      "size": 605186,
+      "sha256": "c742ec1f41599c07fbf7bf34b1405fb55f038b280d4080d6f4d3ca592c3bce02"
+    },
+    {
+      "path": "build/audio/12-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 180,
+      "sha256": "59f85ffb806c9c9c1b69855ab01da35d76bf548769be35aa08df617f3385bf48"
+    },
+    {
+      "path": "build/audio/12-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 24,
+      "sha256": "6f38676c463991f434915b4caa701b5eb6dfb1bc4a3fc23adf7ac7b915621558"
+    },
+    {
+      "path": "build/build.log",
+      "mode": 420,
+      "type": "file",
+      "size": 5069,
+      "sha256": "185418c8810986a90339b04fd6b6422f7ba0f413c9d58963b05bcedff5e283ca"
+    },
+    {
+      "path": "build/contact-sheet",
+      "mode": 493,
+      "type": "file",
+      "size": 66784,
+      "sha256": "9c48b08ca9ec88db87c1ac0527efcf9f04bc20c7a32d39771184078bffd1bd1b"
+    },
+    {
+      "path": "build/contact-sheet.jpg",
+      "mode": 420,
+      "type": "file",
+      "size": 296685,
+      "sha256": "9bc97cbfbe1259200580da29ae998a537bae90b374f0ac070707743fcc4b3d4d"
+    },
+    {
+      "path": "build/engine-check",
+      "mode": 493,
+      "type": "file",
+      "size": 167616,
+      "sha256": "2e7507fbf56877fd60edd5d38f3434640646e0166f69ccf181b1339c3c43f90f"
+    },
+    {
+      "path": "build/impedance-video",
+      "mode": 493,
+      "type": "file",
+      "size": 258400,
+      "sha256": "8e5c3ab04f1c84dd2cbd9d985fed89c90eeec999143541877ea66b7e23ec5b6a"
+    },
+    {
+      "path": "build/microsoft-audio",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "build/microsoft-audio/01-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 52128,
+      "sha256": "c18ffdc31b2802017d05b2f565427ba1b22065ced77190baa0e1356843027795"
+    },
+    {
+      "path": "build/microsoft-audio/01-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 108,
+      "sha256": "1b355fc4339edf009ac3d1ed2da3e89f3ccd75ff239afbd32030a423708c07fb"
+    },
+    {
+      "path": "build/microsoft-audio/01-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/01-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 66528,
+      "sha256": "f49a9948cb66aa5c729738db30e3746f265a9c11e12d75a10d2e5a0478c295a9"
+    },
+    {
+      "path": "build/microsoft-audio/01-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 132,
+      "sha256": "fa4c00159ab6bf542953b0617e48cb30a6a075bc09ce858a425480df1917165c"
+    },
+    {
+      "path": "build/microsoft-audio/01-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/02-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 54000,
+      "sha256": "fdb7f4f60e58794f590f0e67ed5c3dd25b15f9a5c79f4272862289cdf300c82e"
+    },
+    {
+      "path": "build/microsoft-audio/02-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 105,
+      "sha256": "875196c91c4ffdb2f4b3a6274617668c697065a845126f1b4a1976c6343e0724"
+    },
+    {
+      "path": "build/microsoft-audio/02-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/02-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 53856,
+      "sha256": "786cfee1216ff59674f7832357c66772675da7ffff352f5b1c2a6e003a5389ff"
+    },
+    {
+      "path": "build/microsoft-audio/02-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 111,
+      "sha256": "cc6400bbf87fd8a6357d75203ece06b51c9b138d8ed1bafe8b5ced306699839f"
+    },
+    {
+      "path": "build/microsoft-audio/02-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/03-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 57744,
+      "sha256": "391101ce906b109a364c9293c6f2e75f09a255effb8c6bfb9e8a52a9d46c363a"
+    },
+    {
+      "path": "build/microsoft-audio/03-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 123,
+      "sha256": "36f0b37a712bd58b876fb882063cfe66bdeb913ea9f4733e14e56b6cf63e9286"
+    },
+    {
+      "path": "build/microsoft-audio/03-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/03-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 65088,
+      "sha256": "5eaf516fb6b927a6234723851e2f6d0a99b45f3e227a889d3c2608c5875529e4"
+    },
+    {
+      "path": "build/microsoft-audio/03-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 135,
+      "sha256": "36915e8d928d77b7466e7d9ff18774019dc62db3a5a5d97f8b5bf77db00ad54e"
+    },
+    {
+      "path": "build/microsoft-audio/03-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/04-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 63072,
+      "sha256": "0184ceb873138f8b2afa6571371b0fda718189fc7f0021cc0ab8985f2c62ec68"
+    },
+    {
+      "path": "build/microsoft-audio/04-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 138,
+      "sha256": "1337f0757de6a45fbbdaff193f05add7908339fcba4b903d4621bede63804941"
+    },
+    {
+      "path": "build/microsoft-audio/04-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/04-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 66672,
+      "sha256": "8ef726428c2f182cdfaaf7fe4c90151c72a5a0deddcadd3ea3570f8069ffec64"
+    },
+    {
+      "path": "build/microsoft-audio/04-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 147,
+      "sha256": "46b0bb42064ce58acf19bf896511cf4474055820d377184dcee49cb872c50076"
+    },
+    {
+      "path": "build/microsoft-audio/04-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/05-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 65376,
+      "sha256": "7ca0c65bf26c491850239625ceab677327cc7b983e9f058f8f7cdf5da33e9d90"
+    },
+    {
+      "path": "build/microsoft-audio/05-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 135,
+      "sha256": "577353ff355bd5cc55b6f198d36bbf9fdc3339947ae1de1164eb0e82a9504bae"
+    },
+    {
+      "path": "build/microsoft-audio/05-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/05-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 74448,
+      "sha256": "e9e1cef6ad273fbc5de1109201c62862f784ed837d603906d7f962765bec60c6"
+    },
+    {
+      "path": "build/microsoft-audio/05-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 159,
+      "sha256": "834277aedc0abecb2a089fe64a1aaec5e112b188eb8a97f9ccbf2c6f6abce978"
+    },
+    {
+      "path": "build/microsoft-audio/05-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/06-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 65952,
+      "sha256": "351847264e8565a7f1d30e209f32681988074041212a8fb6f6cdd28e20f1d9af"
+    },
+    {
+      "path": "build/microsoft-audio/06-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 144,
+      "sha256": "b6b16e47933990d8fb9aa19bb50babf0b9b8d65255f771340eec7dbcdc40e03b"
+    },
+    {
+      "path": "build/microsoft-audio/06-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/06-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 67824,
+      "sha256": "231a11b44c4a23919b67764b55fe02ee69dd3846d3ed2b04f8203e3279161260"
+    },
+    {
+      "path": "build/microsoft-audio/06-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 141,
+      "sha256": "c0c256327ac9461f90a08188cbb08075394d67225d76923a869dfffc6e12cdb0"
+    },
+    {
+      "path": "build/microsoft-audio/06-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/07-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 61200,
+      "sha256": "1974b35dacb19a2f4833e7d8cc5e7203bd5c0a6f4084ebb1d890218707a98ca9"
+    },
+    {
+      "path": "build/microsoft-audio/07-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 129,
+      "sha256": "4a6ff1fcfe84e550fe8e0d422c5ce7e34f80c1fdff254323a7eefe4e7985fd4f"
+    },
+    {
+      "path": "build/microsoft-audio/07-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/07-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 85536,
+      "sha256": "7d696c6d40d91281771cf14b2721933c3edc0cb9e3ea5ae0f91e642d018989af"
+    },
+    {
+      "path": "build/microsoft-audio/07-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 177,
+      "sha256": "e9a2ae9d29f97a67f0d8ba22cf0103200c3400af183b95df300b640d3a0fe73b"
+    },
+    {
+      "path": "build/microsoft-audio/07-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/08-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 65520,
+      "sha256": "7ddaa8494931c96d3f24280d5b33551c1a24d0ca873c14aeff3e800cc595c15f"
+    },
+    {
+      "path": "build/microsoft-audio/08-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 135,
+      "sha256": "4059f6e5fd14da8d0abba46a5b8164f4296f3dd994120475e57e48e6999f89b7"
+    },
+    {
+      "path": "build/microsoft-audio/08-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/08-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 92592,
+      "sha256": "d88f3615321fd11e74d2bf73617ead1d4c6d26de76288ea00ba1b3ac14c301d8"
+    },
+    {
+      "path": "build/microsoft-audio/08-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 195,
+      "sha256": "c55260606882cd6e20ddf95e9667b3f3b370c97945aa7de2c568b3743f03b6ff"
+    },
+    {
+      "path": "build/microsoft-audio/08-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/09-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 54864,
+      "sha256": "6eee555150231627389183aeb56a87996d62bbea6a304ea7684869719c7a5936"
+    },
+    {
+      "path": "build/microsoft-audio/09-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 120,
+      "sha256": "49d6d09c1fea12495ab59a0f229a8e40c7bc6c4172b417cb74394591c28d3b1f"
+    },
+    {
+      "path": "build/microsoft-audio/09-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/09-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 84528,
+      "sha256": "f01783c598415d4e38972379bd28a1fa1c5d0e671b38673119351cfcc58aca4f"
+    },
+    {
+      "path": "build/microsoft-audio/09-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 177,
+      "sha256": "444100b57f1fe12e7c4c5f68f2fdb38758dbc11dc830d032cd80662d40223a00"
+    },
+    {
+      "path": "build/microsoft-audio/09-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/10-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 41040,
+      "sha256": "763e0c5cf041b8ef57f2ff49861b425569bf5cb50b779352f404c75854892d75"
+    },
+    {
+      "path": "build/microsoft-audio/10-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 102,
+      "sha256": "66f28b8c2f3408144ecb3ecec440cce56fab8b6821e0050c0e31153845e1cc99"
+    },
+    {
+      "path": "build/microsoft-audio/10-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/10-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 95328,
+      "sha256": "47e04c8e1bc4c36ee83cd2543ee7e2810656d61d123b05caa487a246d136d6e6"
+    },
+    {
+      "path": "build/microsoft-audio/10-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 201,
+      "sha256": "029da55c38d70acfd20335befeab056a406a69df4a226d45575098aa45edd7ba"
+    },
+    {
+      "path": "build/microsoft-audio/10-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/11-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 56160,
+      "sha256": "a91e13bfeccdb483d678387c8b040a139ad802e82765130b975909e30806ab9f"
+    },
+    {
+      "path": "build/microsoft-audio/11-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 114,
+      "sha256": "9e7a8c1653322ac34cf554197094c111676d43242525f903a9f01fac801d2f4c"
+    },
+    {
+      "path": "build/microsoft-audio/11-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/11-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 78768,
+      "sha256": "ccf78c13a80aa1de5214ac677868b8661d9755435a465fa2db71b3a4cd857b71"
+    },
+    {
+      "path": "build/microsoft-audio/11-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 174,
+      "sha256": "6b2ae64f6cf608aa31320d9f67e72db44a4bf88a4c4d9518decc35930fecd17a"
+    },
+    {
+      "path": "build/microsoft-audio/11-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/12-01.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 66816,
+      "sha256": "aa51b69f018e74b02d2e3bc966ccd89f0851a210487409191555259578fbf322"
+    },
+    {
+      "path": "build/microsoft-audio/12-01.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 123,
+      "sha256": "f42081cb3a3ced542633b63a2ae24a110a3091dc154209db4426efa0e0645724"
+    },
+    {
+      "path": "build/microsoft-audio/12-01.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-audio/12-02.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 84816,
+      "sha256": "dc299bb0cdb0ff374b948c2714f55c7b847ce0003e8305bc873a56129534f627"
+    },
+    {
+      "path": "build/microsoft-audio/12-02.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 180,
+      "sha256": "59f85ffb806c9c9c1b69855ab01da35d76bf548769be35aa08df617f3385bf48"
+    },
+    {
+      "path": "build/microsoft-audio/12-02.voice-settings.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 64,
+      "sha256": "3b19083fe7bd14f8e471ed3894191c3e9e38b06ab4a4f492bd6d624c6698fac7"
+    },
+    {
+      "path": "build/microsoft-prepare.log",
+      "mode": 420,
+      "type": "file",
+      "size": 6616,
+      "sha256": "cdaefec4b490bec7856f9ef94ad85fe8539370a7b160dd58da2b9ca82590b183"
+    },
+    {
+      "path": "build/microsoft-render.log",
+      "mode": 420,
+      "type": "file",
+      "size": 2334,
+      "sha256": "e6da0d302f0d57b109d535f4625ae89e7b424f435127860b4abc3324eab6b60b"
+    },
+    {
+      "path": "build/microsoft-tts",
+      "mode": 493,
+      "type": "file",
+      "size": 120784,
+      "sha256": "00153c819d0b17d9767386207d8c2ea4d1ca513f7a3a6230c7791ccdac9dc87c"
+    },
+    {
+      "path": "build/microsoft-voices.json",
+      "mode": 420,
+      "type": "file",
+      "size": 170998,
+      "sha256": "c2fe7a26575b4b1e52f3bfe0901bb16d7f4e43904e554dc7891466b6a5769b0e"
+    },
+    {
+      "path": "build/ms-tts-probe.mp3",
+      "mode": 420,
+      "type": "file",
+      "size": 52128,
+      "sha256": "f4098b97aadbf9eee14b2b6527c7f4c6337fbc66fffa805b7a687817c67bdb1f"
+    },
+    {
+      "path": "build/ms-tts-probe.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 108,
+      "sha256": "1b355fc4339edf009ac3d1ed2da3e89f3ccd75ff239afbd32030a423708c07fb"
+    },
+    {
+      "path": "build/preview-access.log",
+      "mode": 420,
+      "type": "file",
+      "size": 1577,
+      "sha256": "4ff434d34e134cde22411a3e44d81522aa23f02e07ba034086cc07f3cd9966c6"
+    },
+    {
+      "path": "build/previous-system-subtitles.srt",
+      "mode": 420,
+      "type": "file",
+      "size": 5250,
+      "sha256": "ad1222427721e3534b963d30d4b8118d367799c135985274d685914ad65412b0"
+    },
+    {
+      "path": "build/previous-system-timeline.json",
+      "mode": 420,
+      "type": "file",
+      "size": 15046,
+      "sha256": "4998a62f70dad028f2eaab5e696155bd581115922e718deeb2de06c21f0930f0"
+    },
+    {
+      "path": "build/previous-system-voice.mp4",
+      "mode": 420,
+      "type": "file",
+      "size": 17307786,
+      "sha256": "d5540112956fea6da91b90ee46e9e485c550c6ec3eec43b1f03939dbc285d305"
+    },
+    {
+      "path": "build/render.log",
+      "mode": 420,
+      "type": "file",
+      "size": 2334,
+      "sha256": "ddebbc5a36b1501978f0c21647cfc7c5afbe40af6d4e18f04e432d70688d9040"
+    },
+    {
+      "path": "build/silent.mp4",
+      "mode": 420,
+      "type": "file",
+      "size": 16986943,
+      "sha256": "35b2dca347750cb192f2b7887c762c0172f484ad5ed5e42213b5ae351b86f41d"
+    },
+    {
+      "path": "build/speech-provider.json",
+      "mode": 420,
+      "type": "file",
+      "size": 100,
+      "sha256": "8d748017256e2e57d334f904586f68d313559fae38b761e50d8bb1ad153875da"
+    },
+    {
+      "path": "build/timeline.json",
+      "mode": 420,
+      "type": "file",
+      "size": 14607,
+      "sha256": "e16a093a9005de09150b531d0bcd7a333d2324298f8d4d13d588e69a32dff217"
+    },
+    {
+      "path": "content",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "content/scenes.json",
+      "mode": 420,
+      "type": "file",
+      "size": 6250,
+      "sha256": "77ca02616a2e8f1c6014667bff8847b62204549016c583c27a56af2922c0df16"
+    },
+    {
+      "path": "content/script.md",
+      "mode": 420,
+      "type": "file",
+      "size": 4771,
+      "sha256": "f028f6b016508407f03725531b4199ae0f47b0e77d0a9ad446762a63503e0553"
+    },
+    {
+      "path": "content/sources.md",
+      "mode": 420,
+      "type": "file",
+      "size": 1900,
+      "sha256": "b3bc331073d8e71a53123aae33f177f9d84b7f0e19a203d59ae51da5574dcb51"
+    },
+    {
+      "path": "output",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "output/SHA256SUMS",
+      "mode": 420,
+      "type": "file",
+      "size": 198,
+      "sha256": "21942cbcf3fc27607b6d5838ae92080f4a86ba83cb3a0f37033339a64803f762"
+    },
+    {
+      "path": "output/chapters.json",
+      "mode": 420,
+      "type": "file",
+      "size": 1352,
+      "sha256": "00f2a74f768dcd7ab37bcd1281ece42ebcf038c38d072e0e7c63d56b46a4b6d6"
+    },
+    {
+      "path": "output/chapters.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 594,
+      "sha256": "47eba14102353c8acea7ec4739360debaa7da8f15f07f714b385dfd3d641d338"
+    },
+    {
+      "path": "output/contact-sheet.png",
+      "mode": 420,
+      "type": "file",
+      "size": 751564,
+      "sha256": "bb73a3221c1ea4c6c06aedb24ef4041470d0ccf912d3300c52e991bfe89da847"
+    },
+    {
+      "path": "output/cover-production.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 2534,
+      "sha256": "5dd1edfb48e2cae87ef54272af8a9de4d90da72692308cae8d5452b58e1b52f6"
+    },
+    {
+      "path": "output/cover.jpg",
+      "mode": 420,
+      "type": "file",
+      "size": 330304,
+      "sha256": "1e311e7d7058def8130ce9b88974efec3b098e622968f0a26d315f51e41d8f10"
+    },
+    {
+      "path": "output/cover.png",
+      "mode": 420,
+      "type": "file",
+      "size": 1584296,
+      "sha256": "3fde615a2a5aa8550ae252f73aae67a88708afe7f3775ebba0b64c93ae10ef4d"
+    },
+    {
+      "path": "output/frames",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "output/frames/scene-01.png",
+      "mode": 420,
+      "type": "file",
+      "size": 100212,
+      "sha256": "3a44df0121655c9d6441ae1dd9403106ad2785e3e6b66763c463dcf28a67e678"
+    },
+    {
+      "path": "output/frames/scene-02.png",
+      "mode": 420,
+      "type": "file",
+      "size": 94129,
+      "sha256": "9326cbae7c2d48c505d8dc95de6abaa8c0df2f27c270a898f2fbf7fc6f8a7a52"
+    },
+    {
+      "path": "output/frames/scene-03.png",
+      "mode": 420,
+      "type": "file",
+      "size": 82515,
+      "sha256": "06048f8d8fe04cb05fe7a1869c680009dd546efb4b10cf84e2571d9dcacf4590"
+    },
+    {
+      "path": "output/frames/scene-04.png",
+      "mode": 420,
+      "type": "file",
+      "size": 96282,
+      "sha256": "f09edf4b2b14853d1ebbd3bedc63d4a694a085f5842f8f83c29acd48319aea76"
+    },
+    {
+      "path": "output/frames/scene-05.png",
+      "mode": 420,
+      "type": "file",
+      "size": 102717,
+      "sha256": "1ce48596a7d2905ae39f3e1be623fe54a77fc85c258ef765250da418750b96d6"
+    },
+    {
+      "path": "output/frames/scene-06.png",
+      "mode": 420,
+      "type": "file",
+      "size": 94427,
+      "sha256": "c5de5e03fcffabcbc752f50bd8ca57120ec2b77cc3124fb0bdc899eead1939f9"
+    },
+    {
+      "path": "output/frames/scene-07.png",
+      "mode": 420,
+      "type": "file",
+      "size": 116630,
+      "sha256": "0c1f0d89687f616a9f364ed94b6ee5ff0c94acaca0627ac9c7ad6f7eaf4e15e1"
+    },
+    {
+      "path": "output/frames/scene-08.png",
+      "mode": 420,
+      "type": "file",
+      "size": 109924,
+      "sha256": "bb2c51d57ed0fc9ad92caa5836f511a9bfd9c25c08ee5c995384bf892a9d3179"
+    },
+    {
+      "path": "output/frames/scene-09.png",
+      "mode": 420,
+      "type": "file",
+      "size": 115415,
+      "sha256": "e5c5a599f787ce554f477b265d8a55edac2972829ec94ace0603ab47cc6e4f2d"
+    },
+    {
+      "path": "output/frames/scene-10.png",
+      "mode": 420,
+      "type": "file",
+      "size": 105341,
+      "sha256": "16c12bf879997e9e1bc5e1a2f9eb08c18d592a3fa756cdbdce756d9abcda944e"
+    },
+    {
+      "path": "output/frames/scene-11.png",
+      "mode": 420,
+      "type": "file",
+      "size": 90453,
+      "sha256": "573891af6a0111d4c1b565ce47a27b6c0d0ca336c8c938575764b19375e46874"
+    },
+    {
+      "path": "output/frames/scene-12.png",
+      "mode": 420,
+      "type": "file",
+      "size": 112739,
+      "sha256": "04e5ae848252aac65138965a7e8d11b8febd05e91a3740f6a8ee526289851ceb"
+    },
+    {
+      "path": "output/impedance-matching.mp4",
+      "mode": 420,
+      "type": "file",
+      "size": 18130307,
+      "sha256": "cd5ccf92e2b78c7d1813b12c8fd8c493b271fbf8ff6ba2976697426a4c36d0c8"
+    },
+    {
+      "path": "output/impedance-matching.zh-CN.srt",
+      "mode": 420,
+      "type": "file",
+      "size": 5250,
+      "sha256": "0a0aa1aabc473d4846b902660651ee52b5bd0e97df9abe2b0f24fa293ccd8d74"
+    },
+    {
+      "path": "output/index.html",
+      "mode": 420,
+      "type": "file",
+      "size": 4690,
+      "sha256": "12d1bc60707dd53bf8eaa0ec4c0003ebd4335ece44e3a4015dc51f12e9342b8f"
+    },
+    {
+      "path": "output/metadata.json",
+      "mode": 420,
+      "type": "file",
+      "size": 280,
+      "sha256": "06e474f75f891d32ac7ca98d34a5db54384a7a76b0350c9590e6c91061bee1ca"
+    },
+    {
+      "path": "output/playback-check.json",
+      "mode": 420,
+      "type": "file",
+      "size": 908,
+      "sha256": "4673539eb5854260fb7e51e51e3fa95556af3d752cf5d4de4b86f396e22ef988"
+    },
+    {
+      "path": "output/poster.jpg",
+      "mode": 420,
+      "type": "file",
+      "size": 139511,
+      "sha256": "0e218299a12d7b13c9ccd5707ffc02e0cd40ab4b1210170a9dbd6099858ea278"
+    },
+    {
+      "path": "output/verification.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 824,
+      "sha256": "482df9f39936bbc09b4218b16649f87809e8d9ecf8379d40849cedb1bddd2fc1"
+    },
+    {
+      "path": "output/verify",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "output/verify/frame-first.png",
+      "mode": 420,
+      "type": "file",
+      "size": 168618,
+      "sha256": "b2c44f03bbd1495975d33622512ca05eaf0e39586481928fe0c33bdf71117e6f"
+    },
+    {
+      "path": "output/verify/frame-last.png",
+      "mode": 420,
+      "type": "file",
+      "size": 188742,
+      "sha256": "999e13fe3f47b90d044bfc4a819c0bda8bd1206d851de4cf27d02085ff158421"
+    },
+    {
+      "path": "output/verify/frame-middle.png",
+      "mode": 420,
+      "type": "file",
+      "size": 219521,
+      "sha256": "60ec15f36cedb7b3ab28db79b2d476b8777ba22de12f530c92f59de3ed70ff7e"
+    },
+    {
+      "path": "output/video-description.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 1214,
+      "sha256": "5275de80abbe940a0195f3ee738a2010bd6bec7e9875373d4d93dcb290136d20"
+    },
+    {
+      "path": "scripts",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "scripts/build.sh",
+      "mode": 493,
+      "type": "file",
+      "size": 381,
+      "sha256": "beb75b0767eed0b40df482e7c1bac574b31e3e2bb52ef63050125986adafcbdb"
+    },
+    {
+      "path": "scripts/contact-sheet.swift",
+      "mode": 420,
+      "type": "file",
+      "size": 685,
+      "sha256": "b30665cc08e6a365ed3f88aa9aacc4eda9643a2876d024a12afff5ebaac13f00"
+    },
+    {
+      "path": "scripts/metadata.rb",
+      "mode": 420,
+      "type": "file",
+      "size": 1231,
+      "sha256": "8a8609d31ba743ce5118565a38f1796f8dbf5f2be5b5aa5f90c671bc2a028d5b"
+    },
+    {
+      "path": "scripts/microsoft-tts.sh",
+      "mode": 493,
+      "type": "file",
+      "size": 375,
+      "sha256": "11590a53fcffe05a4d2719f993ee4476336632067c5bb8f1dd20a45585662499"
+    },
+    {
+      "path": "scripts/microsoft-tts.swift",
+      "mode": 420,
+      "type": "file",
+      "size": 11375,
+      "sha256": "26a75c2d54974c3e3de53565477b341440079930585354bdde2d980d8f1ecb27"
+    },
+    {
+      "path": "scripts/preview-server.rb",
+      "mode": 420,
+      "type": "file",
+      "size": 840,
+      "sha256": "5f742f28481439886d0f0e414d087df424221fc00801edb15efca3135b26fca8"
+    },
+    {
+      "path": "scripts/render.sh",
+      "mode": 493,
+      "type": "file",
+      "size": 632,
+      "sha256": "5a4ffacc0519931b4807459301d3372b8dd89848005634e19573b764323784a5"
+    },
+    {
+      "path": "src",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "src/Engine.swift",
+      "mode": 420,
+      "type": "file",
+      "size": 31175,
+      "sha256": "52619fed89e156e9cf3b70dc4b090a76052f34b5f907b2e2b000789f069caeee"
+    },
+    {
+      "path": "src/Visuals.swift",
+      "mode": 420,
+      "type": "file",
+      "size": 15980,
+      "sha256": "929d6cf10e3c98037b883e0131b6afedbecd899394e96b932324e9f8b10bd973"
+    },
+    {
+      "path": "third_party",
+      "mode": 493,
+      "type": "directory"
+    },
+    {
+      "path": "third_party/GPL-3.0.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/edge-tts-LICENSE.txt",
+      "mode": 420,
+      "type": "file",
+      "size": 9041,
+      "sha256": "3613045a46a5bce847f80eadbbf013e4260ef19d728ffd061d61e792689ec3a8"
+    }
+  ]
+}
