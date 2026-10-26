@@ -7,5 +7,7 @@ Sentence audio checked: 24 valid clips
 Decoded frame 0.000s -> output/verify/frame-first.png
 Decoded frame 142.200s -> output/verify/frame-middle.png
 Decoded frame 284.333s -> output/verify/frame-last.png
+Full video decode: 8532 frames, last 284.367s, maximum frame gap 0.033333s
 Audio PCM: 6813520 samples, RMS 0.058287 (-24.7 dBFS), peak 0.741743 (-2.6 dBFS), nonzero 83.9%, near-full-scale 0
+Audio continuity: all 15 consecutive 20-second windows contain non-silent PCM
 Verification passed: decoded video frames and audible PCM audio are present.

@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-26T20:45:03+08:00",
+  "videoSHA256": "cd5ccf92e2b78c7d1813b12c8fd8c493b271fbf8ff6ba2976697426a4c36d0c8",
+  "browserPlayback": {
+    "start": 40.152,
+    "end": 284.4,
+    "startWallMilliseconds": 1793018458838,
+    "endWallMilliseconds": 1793018703200,
+    "elapsedWallSeconds": 244.362,
+    "ended": true,
+    "error": null,
+    "bufferedAtEnd": [
+      [
+        0,
+        284.4
+      ]
+    ],
+    "observedCheckpoints": [
+      62.410491,
+      226.035883,
+      281.286168,
+      283.411279,
+      284.4
+    ]
+  },
+  "http": {
+    "fullDownloadSHA256Matches": true,
+    "rangeStatus": 206,
+    "rangeBytes": "3000000-3001023",
+    "contentType": "video/mp4",
+    "acceptRanges": "bytes",
+    "cacheControl": "no-store"
+  },
+  "fullDecode": {
+    "frames": 8532,
+    "maximumFrameGapSeconds": 0.033333,
+    "audioWindowsWithNonSilentPCM": 15,
+    "audioWindowSeconds": 20
+  }
+}

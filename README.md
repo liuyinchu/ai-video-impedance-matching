@@ -37,7 +37,7 @@ build/impedance-video verify
 `prepare` 为每句合成微软神经语音 MP3，保存时间轴；缓存会比较文本、语音与语速。
 默认 `NARRATION_VOICE=zh-CN-YunxiNeural`（微软云希普通话男声），`NARRATION_RATE=-8%`。
 `silent` 和 `mux` 可分别执行画面编码及音轨合成。
-`verify` 检查实际解码帧、视频参数、音轨、时长和非静音采样。
+`verify` 完整解码每一帧，检查帧时间戳连续性、视频参数和时长，并逐个20秒区间检查音轨非静音。
 字幕每块不超过30字，优先按标点分割，块内时间按字符数比例估计；逐句音频起点与时间轴严格一致。
 
 ## 制作说明
@@ -49,3 +49,20 @@ build/impedance-video verify
 - 最大功率示例为 10 V 固定直流戴维南源与 50 Ω 内阻；共轭匹配另行限定线性源与工作频率。
 - 技术内容参照 Analog Devices、Keysight 与 Texas Instruments，链接见 `content/sources.md`。
 - 大型视频和构建缓存由 Git 忽略；可复现源文件及字幕保留在版本控制中。
+
+## 播放预览
+
+在远端仓库运行：
+
+```sh
+/usr/bin/ruby scripts/preview-server.rb
+```
+
+预览服务监听远端 127.0.0.1:18786，明确返回 video/mp4、Accept-Ranges: bytes，并禁用缓存，避免成片更新后浏览器混用旧数据。通过 SSH 转发访问：
+
+```sh
+ssh -N -L 18786:127.0.0.1:18786 yangshuyun@10.10.10.1
+```
+
+然后打开 http://127.0.0.1:18786/index.html 。播放器使用完整预加载、明确的播放按钮与错误提示。
+追加 ?diagnostic=1 可显示仅用于复核的播放事件、缓冲范围和当前位置。

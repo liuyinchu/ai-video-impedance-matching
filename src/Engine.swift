@@ -390,6 +390,44 @@ private func extractVideoFrame(asset: AVAsset, track: AVAssetTrack, at seconds: 
     announce(String(format: "Decoded frame %.3fs -> %@", actualTime, path))
 }
 
+private func verifyVideoContinuity(asset: AVAsset, track: AVAssetTrack) throws {
+    let reader = try AVAssetReader(asset: asset)
+    let output = AVAssetReaderTrackOutput(track: track, outputSettings: [
+        kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA
+    ])
+    output.alwaysCopiesSampleData = false
+    guard reader.canAdd(output) else { throw VideoError.message("Cannot create full video decoder") }
+    reader.add(output)
+    guard reader.startReading() else { throw reader.error ?? VideoError.message("Cannot start full video decoder") }
+    var frames = 0
+    var previous = -1.0
+    var maximumGap = 0.0
+    while let sample = output.copyNextSampleBuffer() {
+        try autoreleasepool {
+            let time = CMTimeGetSeconds(CMSampleBufferGetPresentationTimeStamp(sample))
+            guard time.isFinite, time >= previous else {
+                throw VideoError.message("Video presentation timestamps are invalid or decrease")
+            }
+            if previous >= 0 { maximumGap = max(maximumGap, time - previous) }
+            guard let buffer = CMSampleBufferGetImageBuffer(sample),
+                  CVPixelBufferGetWidth(buffer) == videoWidth,
+                  CVPixelBufferGetHeight(buffer) == videoHeight else {
+                throw VideoError.message("A video frame could not be decoded at the expected dimensions")
+            }
+            previous = time
+            frames += 1
+        }
+    }
+    guard reader.status == .completed else { throw reader.error ?? VideoError.message("Full video decode failed") }
+    let duration = CMTimeGetSeconds(asset.duration)
+    let minimumFrames = Int((duration * Double(frameRate)).rounded(.down)) - 1
+    guard frames >= minimumFrames, previous >= duration - 0.1,
+          maximumGap < 1.5 / Double(frameRate) else {
+        throw VideoError.message("Full video decode has missing frames or timestamp gaps")
+    }
+    announce(String(format: "Full video decode: %d frames, last %.3fs, maximum frame gap %.6fs", frames, previous, maximumGap))
+}
+
 private func verifyAudio(asset: AVAsset, track: AVAssetTrack) throws {
     let reader = try AVAssetReader(asset: asset)
     let output = AVAssetReaderTrackOutput(track: track, outputSettings: [
@@ -407,6 +445,7 @@ private func verifyAudio(asset: AVAsset, track: AVAssetTrack) throws {
     var sampleCount: Int64 = 0
     var nonzeroCount: Int64 = 0
     var clippedCount: Int64 = 0
+    var audioWindows: [Int: (square: Double, count: Int)] = [:]
     while let sample = output.copyNextSampleBuffer() {
         try autoreleasepool {
             guard let block = CMSampleBufferGetDataBuffer(sample) else {
@@ -421,15 +460,20 @@ private func verifyAudio(asset: AVAsset, track: AVAssetTrack) throws {
                 CMBlockBufferCopyDataBytes(block, atOffset: 0, dataLength: byteCount, destination: raw.baseAddress!)
             }
             guard copyStatus == kCMBlockBufferNoErr else { throw VideoError.message("Cannot copy PCM audio") }
+            let window = Int(CMTimeGetSeconds(CMSampleBufferGetPresentationTimeStamp(sample)) / 20)
+            var windowStats = audioWindows[window] ?? (square: 0.0, count: 0)
             for value in floats {
                 guard value.isFinite else { throw VideoError.message("Audio contains a non-finite sample") }
                 let amplitude = abs(Double(value))
                 squareSum += amplitude * amplitude
+                windowStats.square += amplitude * amplitude
+                windowStats.count += 1
                 peak = max(peak, amplitude)
                 sampleCount += 1
                 if amplitude > 0.00001 { nonzeroCount += 1 }
                 if amplitude >= 0.999 { clippedCount += 1 }
             }
+            audioWindows[window] = windowStats
         }
     }
     guard reader.status == .completed else { throw reader.error ?? VideoError.message("Audio verification decode failed") }
@@ -439,6 +483,14 @@ private func verifyAudio(asset: AVAsset, track: AVAssetTrack) throws {
     let peakDB = peak > 0 ? 20 * log10(peak) : -.infinity
     announce(String(format: "Audio PCM: %lld samples, RMS %.6f (%.1f dBFS), peak %.6f (%.1f dBFS), nonzero %.1f%%, near-full-scale %lld", sampleCount, rms, rmsDB, peak, peakDB, Double(nonzeroCount) / Double(sampleCount) * 100, clippedCount))
     guard rms > 0.00001, peak > 0.0001 else { throw VideoError.message("Exported audio is silent or nearly silent") }
+    let expectedWindows = Int(ceil(CMTimeGetSeconds(track.timeRange.duration) / 20))
+    for window in 0..<expectedWindows {
+        guard let stats = audioWindows[window], stats.count > 0,
+              sqrt(stats.square / Double(stats.count)) > 0.00001 else {
+            throw VideoError.message("Silent or missing audio in 20-second window starting at \(window * 20)s")
+        }
+    }
+    announce("Audio continuity: all \(expectedWindows) consecutive 20-second windows contain non-silent PCM")
 }
 
 private func verify() throws {
@@ -495,6 +547,7 @@ private func verify() throws {
     for (label, time) in points {
         try extractVideoFrame(asset: asset, track: videoTrack, at: time, to: "output/verify/frame-\(label).png")
     }
+    try verifyVideoContinuity(asset: asset, track: videoTrack)
     try verifyAudio(asset: asset, track: audioTrack)
     announce("Verification passed: decoded video frames and audible PCM audio are present.")
 }
