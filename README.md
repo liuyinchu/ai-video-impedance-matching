@@ -17,7 +17,7 @@
 
 ## 重新制作
 
-需要 macOS、Xcode Command Line Tools / Swift、系统中文 Tingting 语音与 Ruby 标准库。无需下载素材、安装依赖或使用 Python。
+需要 macOS、Xcode Command Line Tools / Swift、Ruby 标准库与可访问微软在线语音服务的网络。无需下载素材、安装依赖或使用 Python。
 
 ```sh
 ./scripts/render.sh
@@ -34,14 +34,15 @@ build/impedance-video verify
 /usr/bin/ruby scripts/metadata.rb
 ```
 
-`prepare` 为每句合成 AIFF，保存时间轴；缓存会比较文本、语音与语速。
-默认 `NARRATION_VOICE=Tingting`，`NARRATION_RATE=165`。
+`prepare` 为每句合成微软神经语音 MP3，保存时间轴；缓存会比较文本、语音与语速。
+默认 `NARRATION_VOICE=zh-CN-YunxiNeural`（微软云希普通话男声），`NARRATION_RATE=-8%`。
 `silent` 和 `mux` 可分别执行画面编码及音轨合成。
 `verify` 检查实际解码帧、视频参数、音轨、时长和非静音采样。
 字幕每块不超过30字，优先按标点分割，块内时间按字符数比例估计；逐句音频起点与时间轴严格一致。
 
 ## 制作说明
 
+- 配音使用微软在线神经语音云希男声；[微软语音列表](https://learn.microsoft.com/azure/cognitive-services/speech-service/language-support?tabs=tts)。
 - Swift + CoreGraphics / CoreText 绘制，AVFoundation 编码与混音；无第三方视觉素材。
 - 青色为入射电压波，橙色为反射电压波；反射动画仅示意一次末端反射，省略源端再次反射。
 - 50 Ω 线路接 25 / 50 / 100 Ω 纯电阻，清楚区分反射电压幅度与反射功率比例。

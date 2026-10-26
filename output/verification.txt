@@ -1,10 +1,11 @@
-Verify duration: 270.967s / timeline 270.958s / difference 0.008s
+Narration: Microsoft Edge Online Neural | zh-CN-YunxiNeural | rate -8%
+Verify duration: 284.400s / timeline 284.376s / difference 0.024s
 Tracks: 1 video, 1 audio
-Video 1: 1280x720, 30.000 fps, codec avc1, track duration 270.967s
-Audio 1: codec aac , track duration 270.458s
+Video 1: 1280x720, 30.000 fps, codec avc1, track duration 284.400s
+Audio 1: codec aac , track duration 283.897s
 Sentence audio checked: 24 valid clips
 Decoded frame 0.000s -> output/verify/frame-first.png
-Decoded frame 135.483s -> output/verify/frame-middle.png
-Decoded frame 270.900s -> output/verify/frame-last.png
-Audio PCM: 5963607 samples, RMS 0.117094 (-18.6 dBFS), peak 0.755511 (-2.4 dBFS), nonzero 93.1%, near-full-scale 0
+Decoded frame 142.200s -> output/verify/frame-middle.png
+Decoded frame 284.333s -> output/verify/frame-last.png
+Audio PCM: 6813520 samples, RMS 0.058287 (-24.7 dBFS), peak 0.741743 (-2.6 dBFS), nonzero 83.9%, near-full-scale 0
 Verification passed: decoded video frames and audible PCM audio are present.

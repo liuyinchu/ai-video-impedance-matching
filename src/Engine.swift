@@ -96,12 +96,12 @@ private func srtStamp(_ seconds: Double) -> String {
 }
 
 private func prepare() throws {
-    try directory("build/audio")
+    try directory("build/microsoft-audio")
     try directory("output")
     let scenes = try readJSON([Scene].self, from: "content/scenes.json")
     guard !scenes.isEmpty else { throw VideoError.message("No scenes in content/scenes.json") }
-    let voice = ProcessInfo.processInfo.environment["NARRATION_VOICE"] ?? "Tingting"
-    let rate = ProcessInfo.processInfo.environment["NARRATION_RATE"] ?? "165"
+    let voice = ProcessInfo.processInfo.environment["NARRATION_VOICE"] ?? "zh-CN-YunxiNeural"
+    let rate = ProcessInfo.processInfo.environment["NARRATION_RATE"] ?? "-8%"
     var position = 0.0
     var timeline: [TimedScene] = []
     var subtitleBlocks: [String] = []
@@ -112,17 +112,17 @@ private func prepare() throws {
         var cues: [TimedCue] = []
         for (sentenceIndex, text) in scene.narration.enumerated() {
             let stem = String(format: "%02d-%02d", scene.id, sentenceIndex + 1)
-            let audioPath = "build/audio/\(stem).aiff"
-            let textPath = "build/audio/\(stem).txt"
-            let settingsPath = "build/audio/\(stem).voice-settings.txt"
-            let settings = "voice=\(voice)\nrate=\(rate)\n"
+            let audioPath = "build/microsoft-audio/\(stem).mp3"
+            let textPath = "build/microsoft-audio/\(stem).txt"
+            let settingsPath = "build/microsoft-audio/\(stem).voice-settings.txt"
+            let settings = "provider=microsoft-edge-neural\nvoice=\(voice)\nrate=\(rate)\n"
             let previousSettings = try? String(contentsOfFile: settingsPath, encoding: .utf8)
             let previousText = try? String(contentsOfFile: textPath, encoding: .utf8)
             let existingSize = (try? fileManager.attributesOfItem(atPath: audioPath)[.size] as? NSNumber)?.intValue ?? 0
             if previousText != text || previousSettings != settings || existingSize <= 0 {
                 try text.write(toFile: textPath, atomically: true, encoding: .utf8)
                 announce("Voice \(stem): \(text)")
-                try run("/usr/bin/say", ["-v", voice, "-r", rate, "-f", textPath, "-o", audioPath])
+                try run(fileManager.currentDirectoryPath + "/scripts/microsoft-tts.sh", [textPath, audioPath, voice, rate])
                 try settings.write(toFile: settingsPath, atomically: true, encoding: .utf8)
             } else {
                 announce("Voice \(stem): reusing existing audio")
@@ -144,6 +144,7 @@ private func prepare() throws {
         position += duration
     }
     try writeJSON(timeline, to: "build/timeline.json")
+    try writeJSON(["provider": "Microsoft Edge Online Neural", "voice": voice, "rate": rate], to: "build/speech-provider.json")
     try subtitleBlocks.joined(separator: "\n").write(toFile: "output/impedance-matching.zh-CN.srt", atomically: true, encoding: .utf8)
     announce(String(format: "Prepared %d scenes / %d captions / %.2f seconds", scenes.count, subtitleIndex - 1, position))
 }
@@ -442,6 +443,12 @@ private func verifyAudio(asset: AVAsset, track: AVAssetTrack) throws {
 
 private func verify() throws {
     let timeline = try loadTimeline()
+    let speech = try readJSON([String: String].self, from: "build/speech-provider.json")
+    guard let voice = speech["voice"], voice.hasSuffix("Neural"),
+          timeline.flatMap({ $0.cues }).allSatisfy({ $0.audio.hasPrefix("build/microsoft-audio/") }) else {
+        throw VideoError.message("Narration does not use the configured Microsoft neural audio")
+    }
+    announce("Narration: \(speech["provider"] ?? "unknown") | \(voice) | rate \(speech["rate"] ?? "unknown")")
     let expectedDuration = timeline.last!.start + timeline.last!.duration
     let path = "output/impedance-matching.mp4"
     let asset = AVURLAsset(url: URL(fileURLWithPath: path))
