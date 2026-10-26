@@ -1,0 +1,85 @@
+{
+  "verified": true,
+  "verifiedAt": "2026-10-26T13:39:41.862Z",
+  "sourceHead": "e279f63d3e81e8df9bae2551d2f910a3dda6e8bc",
+  "sourceFileCount": 313,
+  "sourceTotalBytes": 74924507,
+  "sourceEntryCount": 402,
+  "fullSnapshotExtractedAndVerified": true,
+  "releaseAssetsDownloadedAndHashVerified": true,
+  "workflowCommit": "3b93a027d0367ffdd36104a765c78f27747b9ac4",
+  "workflowRun": "https://github.com/liuyinchu/ai-video-impedance-matching/actions/runs/40332488600",
+  "release": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/tag/backup-2026-10-26",
+  "assets": [
+    {
+      "name": "SHA256SUMS",
+      "size": 787,
+      "sha256": "09ffcf9c1da0b36a9e267bee3588813c3917ba3577251bcf0fd22b79d9ea709b",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/SHA256SUMS",
+      "serverDigest": "sha256:09ffcf9c1da0b36a9e267bee3588813c3917ba3577251bcf0fd22b79d9ea709b"
+    },
+    {
+      "name": "SOURCE-HEAD.txt",
+      "size": 41,
+      "sha256": "064e9a691fefa32bd23778a975705fd0bb98cb72801219989352a3abf0d5015e",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/SOURCE-HEAD.txt",
+      "serverDigest": "sha256:064e9a691fefa32bd23778a975705fd0bb98cb72801219989352a3abf0d5015e"
+    },
+    {
+      "name": "ai-video-impedance-matching-full-2026-10-26.tar.gz",
+      "size": 68135963,
+      "sha256": "3a4c446bddf375e68592a90a14d516fc64a49651a5aef3159f5865160dae55dd",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/ai-video-impedance-matching-full-2026-10-26.tar.gz",
+      "serverDigest": "sha256:3a4c446bddf375e68592a90a14d516fc64a49651a5aef3159f5865160dae55dd"
+    },
+    {
+      "name": "chapters.txt",
+      "size": 594,
+      "sha256": "47eba14102353c8acea7ec4739360debaa7da8f15f07f714b385dfd3d641d338",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/chapters.txt",
+      "serverDigest": "sha256:47eba14102353c8acea7ec4739360debaa7da8f15f07f714b385dfd3d641d338"
+    },
+    {
+      "name": "cover.jpg",
+      "size": 330304,
+      "sha256": "1e311e7d7058def8130ce9b88974efec3b098e622968f0a26d315f51e41d8f10",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/cover.jpg",
+      "serverDigest": "sha256:1e311e7d7058def8130ce9b88974efec3b098e622968f0a26d315f51e41d8f10"
+    },
+    {
+      "name": "cover.png",
+      "size": 1584296,
+      "sha256": "3fde615a2a5aa8550ae252f73aae67a88708afe7f3775ebba0b64c93ae10ef4d",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/cover.png",
+      "serverDigest": "sha256:3fde615a2a5aa8550ae252f73aae67a88708afe7f3775ebba0b64c93ae10ef4d"
+    },
+    {
+      "name": "file-manifest.json",
+      "size": 73852,
+      "sha256": "ad95661c407dadf093913a31405dbc057ad7cbeaf71a3adad5ac4ede26c71723",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/file-manifest.json",
+      "serverDigest": "sha256:ad95661c407dadf093913a31405dbc057ad7cbeaf71a3adad5ac4ede26c71723"
+    },
+    {
+      "name": "impedance-matching.mp4",
+      "size": 18130307,
+      "sha256": "cd5ccf92e2b78c7d1813b12c8fd8c493b271fbf8ff6ba2976697426a4c36d0c8",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/impedance-matching.mp4",
+      "serverDigest": "sha256:cd5ccf92e2b78c7d1813b12c8fd8c493b271fbf8ff6ba2976697426a4c36d0c8"
+    },
+    {
+      "name": "impedance-matching.zh-CN.srt",
+      "size": 5250,
+      "sha256": "0a0aa1aabc473d4846b902660651ee52b5bd0e97df9abe2b0f24fa293ccd8d74",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/impedance-matching.zh-CN.srt",
+      "serverDigest": "sha256:0a0aa1aabc473d4846b902660651ee52b5bd0e97df9abe2b0f24fa293ccd8d74"
+    },
+    {
+      "name": "video-description.txt",
+      "size": 1214,
+      "sha256": "5275de80abbe940a0195f3ee738a2010bd6bec7e9875373d4d93dcb290136d20",
+      "url": "https://github.com/liuyinchu/ai-video-impedance-matching/releases/download/backup-2026-10-26/video-description.txt",
+      "serverDigest": "sha256:5275de80abbe940a0195f3ee738a2010bd6bec7e9875373d4d93dcb290136d20"
+    }
+  ]
+}
