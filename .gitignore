@@ -1,0 +1,5 @@
+.DS_Store
+build/
+output/*.mp4
+output/frames/
+output/verify/

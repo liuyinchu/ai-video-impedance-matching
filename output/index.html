@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>阻抗匹配 · 让信号送对地方</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0b1220;color:#edf4fc;font-family:system-ui,"PingFang SC",sans-serif}main{max-width:1100px;margin:48px auto;padding:0 24px}small{color:#63dfef;letter-spacing:.15em}h1{font-size:clamp(26px,4vw,42px);margin:14px 0 12px}p{color:#a5b6cc;line-height:1.8}video{width:100%;border-radius:16px;border:1px solid #253950;background:#080e18;margin:20px 0}nav{display:flex;gap:12px;flex-wrap:wrap}a,button{font:inherit;color:#cce9f5;text-decoration:none;background:#16263a;border:1px solid #2c435b;border-radius:9px;padding:10px 15px;cursor:pointer}a:hover,button:hover{border-color:#63dfef;color:#63dfef}.chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:10px;margin:28px 0}.chapters button{text-align:left;font-size:14px;line-height:1.6}.time{color:#63dfef;font-variant-numeric:tabular-nums;margin-right:10px}footer{color:#71859f;font-size:13px;line-height:1.8;padding:16px 0 40px}h2{font-size:20px;margin:32px 0 8px}
+</style>
+<main><small>EXPLAINED IN MOTION / 电路直觉</small><h1>阻抗匹配</h1><p>为什么接通了，信号还会回来？<br>从一束电压波出发，分清少反射、最大功率与保住电压。</p>
+<video id="film" controls preload="metadata" poster="poster.jpg" playsinline><source src="impedance-matching.mp4" type="video/mp4">请使用支持 MP4 的浏览器播放。</video>
+<nav><a href="impedance-matching.mp4" download>下载 MP4</a><a href="impedance-matching.zh-CN.srt" download>下载字幕</a><a href="contact-sheet.png" target="_blank">查看分镜</a></nav>
+<h2>12 个问题，逐步讲清</h2><div id="chapters" class="chapters"></div>
+<footer>中文配音 · 中文字幕 · 720p / 30 fps<br>技术参考：Analog Devices · Keysight · Texas Instruments。详细依据随项目源文件提供。</footer></main>
+<script>
+fetch('chapters.json').then(r=>r.json()).then(list=>{for(const c of list){const b=document.createElement('button');const t=document.createElement('span');t.className='time';t.textContent=c.time;b.append(t,document.createTextNode(c.title));b.onclick=()=>{const v=document.getElementById('film');v.currentTime=c.start;v.play();v.scrollIntoView({behavior:'smooth',block:'center'})};document.getElementById('chapters').append(b)}})
+</script></html>
