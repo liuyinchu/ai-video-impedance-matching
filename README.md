@@ -7,6 +7,8 @@
 - `output/impedance-matching.mp4`：1280 × 720、30 fps，H.264 视频及中文语音。
 - `output/impedance-matching.zh-CN.srt`：中文字幕，成片中也已烧录字幕。
 - `output/index.html`：本地播放页，附章节跳转与下载链接。
+- `output/cover.png` / `output/cover.jpg`：发布封面；生成提示词和方法见 `output/cover-production.txt`。
+- `output/video-description.txt`：发布标题、简介、章节与话题。
 - `output/contact-sheet.png`：12 幕概览。
 - `output/chapters.txt`：章节时间。
 - `content/scenes.json`：可编辑的分镜与配音稿。

@@ -1,0 +1,12 @@
+封面生成记录
+生成日期：2026-10-26
+方式：内置 image_gen 工具
+画布：1672 × 941 像素，横版，约 16:9
+远端保存路径：
+/Users/yangshuyun/workspace/dev/ai-video/ai-video-1026-sol/output/cover.png
+/Users/yangshuyun/workspace/dev/ai-video/ai-video-1026-sol/output/cover.jpg
+/Users/yangshuyun/workspace/dev/ai-video/ai-video-1026-sol/output/video-description.txt
+
+PNG 为原始生成图；JPG 为同画布的格式转换导出。
+生成提示词：
+Create a polished Chinese science explainer video COVER / thumbnail, landscape 16:9, ideally 1920×1080. This is a final publishable cover for a beginner-friendly 4m44s video about impedance matching, and must remain striking and very legible at small thumbnail size. Visual language consistent with the video: deep midnight navy #0B1220 background, very subtle fine scientific grid, cyan #63DFEF for incident electrical signal, warm orange #FFA571 for reflected signal, crisp warm white Chinese sans-serif typography. Editorial science communication, clean modern composition, substantial negative space, high contrast. Main large exact Chinese title on the left, extremely prominent, bold clean blackletter-free Chinese sans font: “阻抗匹配”. Under it a distinctly smaller but still large exact hook in warm orange, on one or two balanced lines: “信号为什么会反弹？” Small restrained supporting copy near bottom left, exact: “从信号反射，到最大功率”. Small understated series eyebrow exact “电路直觉” at the top left. The right half is a beautiful, clean schematic-inspired 3D/technical illustration: a cyan voltage pulse travelling right on a horizontal transmission line toward a clear load/interface, with a smaller orange returning voltage pulse and a clear leftward arrow indicating reflection. The cyan arrow must point toward the load on the right; the orange reflected arrow must point back toward the left. Two tiny clean optional labels near the line: “50 Ω” on line side and “100 Ω” at the load, only if space allows. Show one strong clear visual idea: incoming versus returning wave, with luminous but restrained linework and a precise engineered interface. Avoid clutter, busy equations, UI panels, playback icons, fake buttons, time stamps, watermarks, logos, people, extraneous English and extra invented text. All text must be spelled exactly as specified. Leave generous crop-safe margins. Attractive and memorable, sophisticated science magazine cover, not a slide full of information.
